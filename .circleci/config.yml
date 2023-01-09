@@ -47,5 +47,5 @@ jobs:
           command:
           |
             if [ "${CIRCLE_BRANCH}" == "main" ]; then
-              ./deployment.sh
+              sh ./deployment.sh
             fi
