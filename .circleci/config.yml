@@ -25,7 +25,7 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
       - run:
-          name: Install node packages
+          name: Install node package
           command: |
             npm install
 
