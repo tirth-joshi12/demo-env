@@ -30,8 +30,8 @@ jobs:
           name: npm install dependencies
           command: npm install
       - run:
-          name: creating build
-          command: npm run
+          name: npm starting
+          command: npm start
 #       - run:
 #           name: Run tests
 #           command: npm test
