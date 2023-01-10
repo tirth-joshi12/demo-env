@@ -21,7 +21,7 @@ jobs:
           name: Build
           command: |
             if [ $CIRCLE_BRANCH = 'main' ]; then
-              npm run build
+              npm build
             fi
       - persist_to_workspace:
           root: .
