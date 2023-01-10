@@ -17,12 +17,12 @@ jobs:
           key: v1-dependencies-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
-      - run:
-          name: Build
-          command: |
-            if [ $CIRCLE_BRANCH = 'main' ]; then
-              npm run build
-            fi
+#       - run:
+#           name: Build
+#           command: |
+#             if [ $CIRCLE_BRANCH = 'main' ]; then
+#               npm run build
+#             fi
       - persist_to_workspace:
           root: .
           paths:
